@@ -26,10 +26,17 @@ export class Pawn extends Figure {
             && (target.y === this.cell.y + firstStepDirection))
             && target.x === this.cell.x
             && this.cell.board.getCell(target.x, target.y).isEmpty()) {
-            return true
+            return true;
         }
 
-        return false
+
+        if(target.y === this.cell.y + directions 
+        && (target.x === this.cell.x + 1 || target.x === this.cell.x - 1)
+        && this.cell.isEnemy(target)) {
+            return true;
+        } 
+
+        return false;
     }
 
     moveFigure(target: Cell): void {

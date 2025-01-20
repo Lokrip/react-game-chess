@@ -5,6 +5,7 @@ import { Board } from './models/Board'
 
 function App() {
   const [board, setBoard] = useState(new Board())
+  const [whitePlayer]
   console.log(board)
 
   useEffect(() => {
