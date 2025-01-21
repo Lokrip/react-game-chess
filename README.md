@@ -10,18 +10,21 @@ To run the project locally, follow these steps:
 
   ```bash
   git clone https://github.com/your-username/chess-game.git
-
+  ```
 2. Navigate to the project directory:
   ```bash
   cd chess-game
+  ```
 
 3. Install the dependencies:
   ```bash
   npm install
+  ```
 
 4. Start the development server:
+  ```bash
   npm run dev
-
+  ```
 
 The project will be available at [http://localhost:3000](http://localhost:3000).
 
