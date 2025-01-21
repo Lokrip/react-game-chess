@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body {
+    background-color: #fffeec;
+    font-family: "Popins", sans-serif;
+}
+
 .app {
     width: 100vw;
     height: 100vh;
@@ -16,6 +21,18 @@
     height: calc(64px * 8);
     display: flex;
     flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: rgb(170, 164, 108);
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
 }
 
 .cell {
@@ -33,7 +50,7 @@
 }
 
 .black {
-    background-color: deepskyblue;
+    background-color: rgb(40, 161, 212);
 }
 
 .white {
@@ -49,4 +66,36 @@
     width: 12px;
     border-radius: 50%;
     background-color: #22c022;
+}
+
+
+.lost-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+.timer-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: calc(60px + 123px);
+    margin-right: 50px;
+    background-color: rgb(234, 229, 187);
+}
+
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: rgb(234, 229, 187);
+}
+
+.timer-black {
+    margin: 10px 0px 10px 0px;
+}
+
+.timer-white {
+    margin: 10px 0px 10px 0px;
 }
